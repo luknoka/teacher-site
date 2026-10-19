@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про мене | Інформатика</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+			<img src="images/logo.png" alt="Логотип сайту">
+			<span>Інформатика | Про мене</span>
+		</div>
+
+        <nav>
+
+            <a href="index.html">Головна</a>
+
+            <a href="about.html">Про мене</a>
+
+            <div class="dropdown">
+
+                <button class="dropbtn">
+                    Навчальні матеріали
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="class5.html">5 клас</a>
+                    <a href="class6.html">6 клас</a>
+                </div>
+
+            </div>
+
+            <a href="students.html">Для учнів</a>
+
+            <a href="parents.html">Для батьків</a>
+
+            <a href="news.html">Новини</a>
+
+            <a href="contacts.html">Контакти</a>
+
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="section">
+
+        <h2>Про мене</h2>
+
+        <div class="about">
+
+            <div class="about-photo">
+				<img src="images/about-photo.jpg" alt="Бартко Владислав Русланович">
+			</div>
+
+            <div class="about-text">
+
+                <h3>Вітаю!</h3>
+
+                <p>
+                    Мене звати Бартко Владислав Русланович.
+                    Я майбутній вчитель інформатики.
+                </p>
+
+                <p>
+                    Народився у місті Хмільник, Вінницька область. Зараз навчаюсь у Вінницькому державному педагогічному університеті
+					ім. Михайла Коцюбинського на 3-му курсі, спеціальності 015.39 (Цифрові технології)
+                </p>
+
+                <p>
+                    На своїх уроках я буду намагатися зробити навчання
+                    зрозумілим та цікавим. Учні виконують
+                    практичні завдання, працюють із програмами,
+                    створюють власні проєкти та вчаться
+                    безпечно користуватися Інтернетом.
+                </p>
+
+                <p>
+                    Моя мета - допомогти кожному учневі
+                    отримати корисні цифрові навички,
+                    які знадобляться йому не тільки в школі,
+                    а й у повсякденному житті.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+	
+	<section class="section achievements">
+		<h2>Мої досягнення</h2>
+		<p class="achievements-text">
+			Сертифікати та підтвердження моєї участі
+			в освітніх заходах і професійного розвитку.
+		</p>
+
+		<div class="certificates">
+			<div class="certificate">
+				<img src="images/certificate1.jpg" alt="Перший сертифікат"
+					onclick="openCertificate(this.src)">
+			</div>
+
+			<div class="certificate">
+				<img src="images/certificate2.jpg" alt="Другий сертифікат"
+					onclick="openCertificate(this.src)">
+			</div>
+
+			<div class="certificate">
+				<img src="images/certificate3.jpg" alt="Третій сертифікат"
+					onclick="openCertificate(this.src)">
+			</div>
+</div>
+
+<div class="certificate-modal" id="certificateModal"
+     onclick="closeCertificate()">
+    <button class="certificate-close"
+            onclick="closeCertificate()">×</button>
+    <img id="largeCertificate" src="" alt="Збільшений сертифікат"
+         onclick="event.stopPropagation()">
+</div>
+	</section>
+
+
+    <section class="section">
+
+        <h2>Моя робота</h2>
+
+        <div class="student-links">
+
+            <a href="#">
+                Цікаві уроки
+            </a>
+
+            <a href="#">
+                Практичні завдання
+            </a>
+
+            <a href="#">
+                Творчі проєкти
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h3>Інформатика</h3>
+            <p>Сайт учителя інформатики</p>
+            <p>Навчаємося, творимо та відкриваємо нове!</p>
+        </div>
+
+        <div class="footer-menu">
+            <h3>Навігація</h3>
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про мене</a>
+            <a href="index.html#materials">Навчальні матеріали</a>
+            <a href="students.html">Для учнів</a>
+            <a href="parents.html">Для батьків</a>
+            <a href="news.html">Новини</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Навчання</h3>
+            <a href="class5.html">Матеріали для 5 класу</a>
+            <a href="class6.html">Матеріали для 6 класу</a>
+            <a href="contacts.html">Контакти</a>
+            
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Сайт учителя інформатики</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини | Інформатика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип сайту">
+            <span>Інформатика | Новини</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про мене</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Навчальні матеріали</button>
+                <div class="dropdown-content">
+                    <a href="class5.html">5 клас</a>
+                    <a href="class6.html">6 клас</a>
+                </div>
+            </div>
+
+            <a href="students.html">Для учнів</a>
+            <a href="parents.html">Для батьків</a>
+            <a href="news.html">Новини</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="section">
+        <h2>Новини та оголошення</h2>
+
+        <p class="section-text">
+            Тут публікуються важливі новини, оголошення
+            та інформація про навчання.
+        </p>
+
+        <div id="newsMessage"></div>
+        <div id="newsContainer"></div>
+    </section>
+
+    <!-- Вхід адміністратора -->
+    <section class="section">
+        <div class="news-admin" id="loginPanel">
+            <h2>Вхід адміністратора</h2>
+
+            <p>
+                Якщо ти адміністратор сайту, увійди,
+                щоб керувати новинами.
+            </p>
+
+            <form id="loginForm">
+                <label for="adminEmail">Електронна пошта</label>
+                <input
+                    type="email"
+                    id="adminEmail"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="adminPassword">Пароль</label>
+                <input
+                    type="password"
+                    id="adminPassword"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button type="submit">Увійти</button>
+                <p id="loginMessage" role="status"></p>
+            </form>
+        </div>
+
+        <!-- Керування новинами -->
+        <div class="news-admin" id="adminPanel" hidden>
+            <h2>Керування новинами</h2>
+            <p>Ти увійшов у режим адміністратора.</p>
+
+            <form id="newsForm">
+                <label for="newsTitle">Назва новини</label>
+                <input
+                    type="text"
+                    id="newsTitle"
+                    placeholder="Наприклад: Нове практичне завдання"
+                    required
+                >
+
+                <label for="newsText">Текст новини</label>
+                <textarea
+                    id="newsText"
+                    rows="5"
+                    placeholder="Напиши текст новини..."
+                    required
+                ></textarea>
+
+                <button type="submit">Опублікувати новину</button>
+                <p id="adminMessage" role="status"></p>
+            </form>
+
+            <button type="button" id="logoutButton">
+                Вийти з облікового запису
+            </button>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>Інформатика</h3>
+            <p>Сайт учителя інформатики</p>
+            <p>Навчаємося, творимо та відкриваємо нове!</p>
+        </div>
+
+        <div class="footer-menu">
+            <h3>Навігація</h3>
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про мене</a>
+            <a href="index.html#materials">Навчальні матеріали</a>
+            <a href="students.html">Для учнів</a>
+            <a href="parents.html">Для батьків</a>
+            <a href="news.html">Новини</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Навчання</h3>
+            <a href="class5.html">Матеріали для 5 класу</a>
+            <a href="class6.html">Матеріали для 6 класу</a>
+            <a href="contacts.html">Контакти</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Сайт учителя інформатики</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script type="module" src="news.js"></script>
+
+</body>
+</html>

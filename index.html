@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Сайт учителя інформатики</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-container">
+
+        <div class="logo">
+			<img src="images/logo.png" alt="Логотип сайту">
+			<span>Інформатика | Головна</span>
+		</div>
+
+
+
+        <nav>
+
+            <a href="index.html">
+                Головна
+            </a>
+
+            <a href="about.html">
+                Про мене
+            </a>
+
+
+            <div class="dropdown">
+
+                <button class="dropbtn">
+                    Навчальні матеріали
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="class5.html">
+                        5 клас
+                    </a>
+
+                    <a href="class6.html">
+                        6 клас
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <a href="students.html">
+                Для учнів
+            </a>
+
+            <a href="parents.html">
+                Для батьків
+            </a>
+
+            <a href="news.html">
+                Новини
+            </a>
+
+            <a href="contacts.html">
+                Контакти
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+    <!-- БАНЕР -->
+
+    <section class="banner" id="home">
+
+    <div class="banner-content">
+
+        <div class="banner-text">
+            <h1>Вітаю на сайті вчителя інформатики!</h1>
+
+            <p>
+                Навчаємося, створюємо та відкриваємо цікавий світ
+                інформаційних технологій.
+            </p>
+
+            <a href="#materials" class="button">Обрати клас</a>
+			<a href="about.html" class="button button-secondary">Про мене</a>
+        </div>
+
+        <div class="banner-photo">
+            <img src="images/photo.jpg" alt="Фото вчителя інформатики">
+        </div>
+
+    </div>
+
+	</section>
+
+
+
+    <!-- ПРО САЙТ -->
+
+    <section class="section welcome">
+    <h2>Що тебе чекає на сайті?</h2>
+    <p class="section-text">
+        Тут ти зможеш дізнатися більше про комп'ютери,
+        навчитися працювати з інформацією та перевірити свої знання.
+    </p>
+
+    <div class="welcome-items">
+        <a href="#" class="welcome-item" onclick="highlightMenu(event, 'materials')">
+            <span class="welcome-number">01</span>
+            <h3>Навчайся</h3>
+            <p>Теорія, пояснення та навчальні матеріали.</p>
+        </a>
+
+        <a href="#" class="welcome-item" onclick="highlightMenu(event, 'students.html')">
+            <span class="welcome-number">02</span>
+            <h3>Практикуйся</h3>
+            <p>Корисні завдання та вправи для учнів.</p>
+        </a>
+
+        <a href="#" class="welcome-item" onclick="highlightMenu(event, 'parents.html')">
+            <span class="welcome-number">03</span>
+            <h3>Дізнавайся</h3>
+            <p>Поради та інформація батьків.</p>
+        </a>
+    </div>
+</section>
+
+
+
+    <!-- НАВЧАЛЬНІ МАТЕРІАЛИ -->
+
+    <section class="section materials" id="materials">
+
+        <h2>
+            Навчальні матеріали
+        </h2>
+
+        <p class="section-text">
+
+            Оберіть свій клас та перейдіть
+            до навчальних матеріалів.
+
+        </p>
+
+
+        <div class="classes">
+
+
+            <!-- 5 КЛАС -->
+
+            <div class="class-block">
+
+                <div class="class-number">
+                    5
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        5 клас
+                    </h3>
+
+                    <p>
+                        Підручники, навчальні програми і тд
+                    </p>
+
+                    <a href="class5.html" class="class-button">
+                        Переглянути
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 6 КЛАС -->
+
+            <div class="class-block">
+
+                <div class="class-number">
+                    6
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        6 клас
+                    </h3>
+
+                    <p>
+                        Тести та інші корисні матеріали
+                    </p>
+                    </p>
+
+                    <a href="class6.html" class="class-button">
+                        Переглянути
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h3>Інформатика</h3>
+            <p>Сайт учителя інформатики</p>
+            <p>Навчаємося, творимо та відкриваємо нове!</p>
+        </div>
+
+        <div class="footer-menu">
+            <h3>Навігація</h3>
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про мене</a>
+            <a href="index.html#materials">Навчальні матеріали</a>
+            <a href="students.html">Для учнів</a>
+            <a href="parents.html">Для батьків</a>
+            <a href="news.html">Новини</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Навчання</h3>
+            <a href="class5.html">Матеріали для 5 класу</a>
+            <a href="class6.html">Матеріали для 6 класу</a>
+            <a href="contacts.html">Контакти</a>
+            
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Сайт учителя інформатики</p>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
