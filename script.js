@@ -67,26 +67,6 @@ function addNewsToPage(news) {
 
 /* ЗАВАНТАЖЕННЯ ЗБЕРЕЖЕНИХ НОВИН */
 
-function loadNews() {
-
-    if (!newsContainer) {
-        return;
-    }
-
-    const savedNews = JSON.parse(
-        localStorage.getItem("news")
-    ) || [];
-
-
-    savedNews.forEach(function(news) {
-
-        addNewsToPage(news);
-
-    });
-}
-
-
-loadNews();
 
 
 /* ФОРМА КОНТАКТІВ */
