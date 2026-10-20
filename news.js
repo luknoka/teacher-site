@@ -189,4 +189,3 @@ onAuthStateChanged(auth, function(user) {
     loadNews();
 });
 
-loadNews();
