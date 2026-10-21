@@ -1622,18 +1622,329 @@ footer {
     }
 }
 
-/* Вирівнювання меню в шапці */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 5px;
+
+/* ================= ПОКРАЩЕНА МОБІЛЬНА АДАПТАЦІЯ ================= */
+
+/* Планшети та невеликі ноутбуки */
+@media (max-width: 1000px) {
+    .header-container {
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    nav > a,
+    nav > .dropdown > .dropbtn {
+        white-space: normal;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .banner-content {
+        min-width: 0;
+    }
+
+    .banner-text {
+        min-width: 0;
+    }
+
+    .banner h1 {
+        overflow-wrap: anywhere;
+    }
+
+    .classes {
+        flex-wrap: wrap;
+    }
+
+    .class-block {
+        min-width: 0;
+    }
+
+    .contact-page {
+        flex-wrap: wrap;
+    }
 }
 
-nav > a,
-nav > .dropdown > .dropbtn {
-    white-space: nowrap;
-    padding: 10px 8px;
-    font-size: 16px;
+/* Телефони */
+@media (max-width: 700px) {
+    header {
+        position: relative;
+    }
+
+    .header-container {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 100%;
+        min-width: 0;
+        white-space: normal;
+    }
+
+    .logo span {
+        min-width: 0;
+        font-size: 17px;
+        overflow-wrap: anywhere;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+    nav > a,
+    nav > .dropdown > .dropbtn {
+        max-width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .dropdown {
+        max-width: 100%;
+    }
+
+    .dropdown-content {
+        left: 0;
+        right: auto;
+        width: max-content;
+        min-width: 180px;
+        max-width: calc(100vw - 24px);
+    }
+
+    .banner {
+        padding: 35px 18px;
+    }
+
+    .banner-content {
+        width: 100%;
+        gap: 28px;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: clamp(27px, 7vw, 34px);
+        line-height: 1.2;
+    }
+
+    .banner p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .banner-buttons {
+        gap: 10px;
+    }
+
+    .button {
+        max-width: 100%;
+        padding: 12px 17px;
+        text-align: center;
+    }
+
+    .banner-photo {
+        width: min(250px, 75vw);
+        height: min(280px, 84vw);
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 38px 16px;
+    }
+
+    .section h2 {
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    .section-text {
+        line-height: 1.6;
+    }
+
+    .classes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .class-block {
+        width: 100%;
+        flex: auto;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .class-number {
+        width: 58px;
+        height: 58px;
+        font-size: 27px;
+    }
+
+    .class-block h3 {
+        font-size: 20px;
+    }
+
+    .welcome-items {
+        grid-template-columns: 1fr;
+    }
+
+    .student-hero,
+    .student-quiz {
+        width: auto;
+        max-width: none;
+        margin-right: 12px;
+        margin-left: 12px;
+        padding: 22px 18px;
+    }
+
+    .study-page {
+        padding: 25px 12px 40px;
+    }
+
+    .resource-grid,
+    .parent-resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-card {
+        padding: 20px;
+    }
+
+    .resource-card h3 {
+        font-size: 17px;
+    }
+
+    .resource-card p {
+        font-size: 14px;
+    }
+
+    .contact-page {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .contact-info,
+    .contact-form,
+    .contact-social {
+        width: 100%;
+        min-width: 0;
+        padding: 20px 16px;
+    }
+
+    .social-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .certificates {
+        gap: 16px;
+    }
+
+    .certificate {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .certificate img {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .certificate-modal {
+        padding: 50px 10px 15px;
+    }
+
+    .certificate-modal img {
+        max-width: 100%;
+        max-height: 85vh;
+    }
+
+    .certificate-close {
+        right: 15px;
+    }
+
+    .news-admin {
+        width: 100%;
+        padding: 18px;
+    }
+
+    #newsForm button,
+    #contactForm button {
+        width: 100%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 18px;
+    }
+
+    .footer-bottom {
+        line-height: 1.5;
+    }
 }
+
+/* Дуже вузькі телефони */
+@media (max-width: 380px) {
+    .header-container {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo span {
+        font-size: 15px;
+    }
+
+    nav > a,
+    nav > .dropdown > .dropbtn {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .banner {
+        padding: 28px 14px;
+    }
+
+    .banner h1 {
+        font-size: 27px;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
+    }
+
+    .banner-buttons .button {
+        width: 100%;
+    }
+
+    .class-block {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .class-number {
+        width: 48px;
+        height: 48px;
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 1001px) {
+    header nav {
+        gap: 12px;
+    }
+}
+
